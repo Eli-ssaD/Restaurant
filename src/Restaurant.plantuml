@@ -1,0 +1,18 @@
+@startuml
+
+class Restaurant {
+    String name;
+    String imageUrl;
+    Array<Menu>
+}
+
+Restaurant --[ Menu
+class Menu {
+    String title;
+    Array<item>;
+}
+Menu  --[ Item
+class Item {
+    String dish;
+    Number price;
+}
